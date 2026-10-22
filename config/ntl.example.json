@@ -1,0 +1,26 @@
+{
+  "paths": {
+    "raw_dir": "../data/raw/ntl",
+    "preprocessed_dir": "../outputs/ntl/preprocessed",
+    "grid_file": "../data/raw/grids/study_grid.gpkg",
+    "clipped_dir": "../outputs/ntl/clipped",
+    "panel_csv": "../outputs/ntl/daily_light_panel.csv",
+    "filtered_panel_csv": "../outputs/ntl/filtered_light_panel.csv",
+    "events_csv": "../data/processed/flood_events.csv",
+    "event_results_csv": "../outputs/ntl/event_recovery_metrics.csv",
+    "grid_results_csv": "../outputs/ntl/grid_recovery_summary.csv"
+  },
+  "settings": {
+    "raster_glob": "VNP46A2_*.tif",
+    "date_regex": "VNP46A2_(\\d{8})",
+    "grid_id_column": "grid_id",
+    "bands": {"light": 1, "quality": 5, "cloud": 7},
+    "valid_quality_values": [0, 1],
+    "cloud_upper_bound": 128,
+    "apply_matrix_filter": true,
+    "before_days": 30,
+    "recovery_threshold": 0.9,
+    "max_recovery_days": 90,
+    "events_encoding": "utf-8"
+  }
+}

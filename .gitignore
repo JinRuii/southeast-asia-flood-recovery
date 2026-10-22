@@ -1,0 +1,37 @@
+# Python and R session files
+__pycache__/
+*.py[cod]
+.venv/
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+# Local configuration and credentials
+config/ntl.local.json
+.env
+.env.*
+# External inputs and generated outputs
+/data/*
+!/data/README.md
+/outputs/*
+!/outputs/README.md
+*.tif
+*.tiff
+*.hdf
+*.h5
+*.shp
+*.shx
+*.dbf
+*.prj
+*.gpkg
+*.rds
+*.RData
+# Reference documents and archives
+*.doc
+*.docx
+*.pdf
+*.rar
+*.zip
+# Operating system files
+.DS_Store
+Thumbs.db
